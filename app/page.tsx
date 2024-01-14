@@ -15,7 +15,7 @@ export default async function Home() {
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         {
           countries?.map((country) => {
-            return <CountryItem key={country.name.common} country={country} />
+            return <CountryItem key={country} country={country} />
           })
         }
       </div>
