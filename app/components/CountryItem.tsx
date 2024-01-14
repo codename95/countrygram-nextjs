@@ -1,11 +1,7 @@
 import React from "react";
+import type { CountryData } from "../types/appTypes";
 
-interface Sample {
-  name: string;
-  email: string;
-}
-
- function CountryItem({country} : any) {
+ function CountryItem({country} : CountryData) {
   return (
     <div className="card shadow-sm">
       <img src={country.flags.png} alt="" style={{width: 200, height: 150, objectFit: 'contain'}}/>
